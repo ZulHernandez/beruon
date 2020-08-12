@@ -1,0 +1,249 @@
+/*SCROLL BAR*/
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-track{
+    background-color:rgb(0,0,0);
+    /*color: #999999*/
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(200,200,200,0.1);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(200,200,200,0.25);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: transparent;
+}
+
+/*TYPOGRAPHY*/
+@font-face{
+    font-family: avant-garde-light;
+    src: url(../font/avant/itc-avant-garde-gothic-std-extra-light-5895708744eb6.otf);
+}
+
+@font-face{
+    font-family: avant-garde-regular;
+    src: url(../font/avant/itc-avant-garde-gothic-std-book-58957161d80eb.otf);
+}
+
+.Tlight{
+    font-family: avant-garde-light, serif;
+}
+
+.Tnormal{
+    font-family: avant-garde-regular, serif;
+}
+
+.text-dark::selection{
+    background: #333333;
+    color: white;
+}
+
+.text-white::selection{
+    background: #ffffff;
+    color: #000000;
+}
+
+.text-normal{
+    font-size: 18px;
+}
+
+.text-subtitle{
+    font-size: 35px;
+}
+
+.text-sec-title{
+    font-size: 48px;
+}
+
+.text-sec-subtitle{
+    font-size: 24px;
+}
+
+.text-ficha{
+    text-align: justify;
+    word-spacing: -2px;
+    text-align-last:center;
+    hyphens: auto;
+}
+
+.text-name{
+    font-size: 25px
+}
+
+/*DIV'S*/
+.navbar{
+    height: 7vh; 
+    padding:0; 
+}
+
+.div-hero{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../imgs/hero1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh!important;
+    height: 100vh;
+}
+
+.div-ficha{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.div-grey{
+    background-color: #222222;
+}
+
+.div-footer{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../imgs/hero1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 37vh;
+}
+
+.bk-point{
+    background:url(../imgs/points.svg);
+    background-size: 300px;
+    background-repeat: repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    min-height: 100vh!important;
+}
+
+/*IMG'S*/
+.img-serv{
+    width: 50%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.img-serv:hover{
+    transform: scale(1.1);
+}
+
+.img-team{
+    width: 250px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.img-team:hover{
+    transform: grayscale(0%);
+}
+
+.img-red{
+    height: 20px;
+}
+
+.brand-title{
+    padding-top: 33vh;
+    /*width: 60%;*/
+}
+
+/*INPUT*/
+input, .input-msj{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: #dddddd;
+    border-style: solid;
+    background-color: rgb(240,240,240);
+    transition: transform .2s;
+}
+
+input:focus, .input-msj:focus{
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #333333;
+    border-radius: 5px;
+    outline-color: transparent; 
+
+}
+
+.input-msj{
+    height: 30vh;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.button-enviar{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: #555555;
+    border-style: solid;
+    background-color: #555555;
+    transition: transform .2s;
+    color:white;
+}
+
+.button-enviar:hover{
+    border-color: black;
+    background-color: black;
+    cursor: pointer;
+}
+
+/*COLUMNA-FILA*/
+#canva1{
+    position: absolute;
+    z-index: 1;
+}
+
+.sobre-canva{
+    position: absolute;
+    z-index: 5;
+    padding-top: 52vh;
+}
+
+.hero-col1{
+    padding-left: 80px; 
+    padding-right: 500px;
+}
+
+.col-ficha{
+    padding-left:1%;
+    padding-right:1%;
+}
+
+/*HTML-ELEMENTO*/
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.brand-icon{
+    height: 50px;
+    padding-left: 15px;
+}
+
+.white-rect{
+    border-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 80%;
+}
+
+a:hover, a:link, a:visited, a:active{
+    text-decoration: transparent;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
