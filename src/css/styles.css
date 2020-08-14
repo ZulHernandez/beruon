@@ -51,33 +51,37 @@
 }
 
 .text-normal{
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 .text-subtitle{
-    font-size: 35px;
+    font-size: 1.8vw;
 }
 
 .text-sec-title{
-    font-size: 48px;
+    font-size: 2.6vw;
 }
 
 .text-sec-subtitle{
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 
 .text-ficha{
     text-align: justify;
-    word-spacing: -2px;
     text-align-last:center;
     hyphens: auto;
 }
 
-.text-name{
-    font-size: 25px
-}
 
 /*DIV'S*/
+.vEspace{
+    height: 4.5vw;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
 .navbar{
     height: 7vh; 
     padding:0; 
@@ -111,19 +115,34 @@
     background-position: center center; 
     background-size: cover;
     background-attachment: fixed;
-    height: 37vh;
 }
 
 .bk-point{
     background:url(../imgs/points.svg);
-    background-size: 300px;
+    background-size: 200px;
     background-repeat: repeat; 
     background-position: center center; 
     background-attachment: fixed;
     min-height: 100vh!important;
 }
 
+.mostrar{
+    display: block;
+}
+
+.ocultar{
+    display: none;
+}
+
 /*IMG'S*/
+.logo-foot{
+    width: 10%;
+}
+
+.img-drucker{
+    width: 25%;
+}
+
 .img-serv{
     width: 50%;
     cursor: pointer;
@@ -141,18 +160,19 @@
     border-width: 3px;
 }
 
-.img-team:hover{
-    transform: grayscale(0%);
-}
-
 .img-red{
     height: 20px;
 }
 
-.brand-title{
-    padding-top: 33vh;
-    /*width: 60%;*/
+.img-uron{
+    width:40%;
 }
+
+.brand-title{
+    padding-top: 27vh;
+    width: 40vw;
+}
+
 
 /*INPUT*/
 input, .input-msj{
@@ -199,6 +219,11 @@ input:focus, .input-msj:focus{
 }
 
 /*COLUMNA-FILA*/
+.padding-eje{
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+
 #canva1{
     position: absolute;
     z-index: 1;
@@ -208,11 +233,14 @@ input:focus, .input-msj:focus{
     position: absolute;
     z-index: 5;
     padding-top: 52vh;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 85%;
 }
 
 .hero-col1{
-    padding-left: 80px; 
-    padding-right: 500px;
+    padding-left: 80px;
+    padding-right: 25vw;
 }
 
 .col-ficha{
@@ -221,7 +249,16 @@ input:focus, .input-msj:focus{
 }
 
 /*HTML-ELEMENTO*/
+
+html{
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body{
+    width: 100vw;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -233,7 +270,7 @@ body{
 }
 
 .white-rect{
-    border-color: white;
+    border-color: white; 
     border-style: solid;
     border-width: 1.5px;
     width: 80%;
@@ -246,4 +283,168 @@ a:hover, a:link, a:visited, a:active{
 
 a:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1660px){
+
+    /*TYPOGRAPHY*/
+    .text-normal{
+        font-size: 1.25vw;
+    }
+
+    .text-subtitle{
+        font-size: 1.8vw;
+    }
+
+    .text-sec-title{
+        font-size: 3vw;
+    }
+
+    .text-sec-subtitle{
+        font-size: 1.5vw;
+    }
+
+    /*IMG'S*/
+    .img-team{
+        width: 175px;
+    }
+
+    .img-uron{
+        width:65%;
+    }
+
+    .brand-title{
+        padding-top: 35vh;
+        width: 40vw;
+    }
+
+    /*COLUMNA-FILA*/
+    #canva1{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hero-col1{
+        padding-right: 20vw;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    /*TYPOGRAPHY*/
+    .text-normal{
+        font-size: 1.3vw;
+    }
+
+    .text-sec-subtitle{
+        font-size: 1.7vw;
+    }
+
+    .text-sec-title{
+        font-size: 3.3vw;
+    }
+
+    /*DIVS*/
+
+    .div-hero{
+        min-height: 70vh!important;
+        height: 70vh;
+    }
+
+    /*IMG'S*/
+    .img-team{
+        width: 175px;
+    }
+
+    .img-uron{
+        width:70%;
+    }
+
+    .brand-title{
+        padding-top: 15vh;
+        width: 40vw;
+    }
+
+    /*COLUMNA-FILA*/
+    #canva1{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hero-col1{
+        padding-right: 18vw;
+    }
+
+    .bk-point{
+        min-height: 70vh!important;
+    }
+
+    .sobre-canva{
+        padding-top: 30vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    /*TYPOGRAPHY*/
+    .text-normal{
+        font-size: 3.5vw;
+    }
+
+    .text-sec-subtitle{
+        font-size: 4vw;
+    }
+
+    .text-sec-title{
+        font-size: 7vw;
+    }
+
+    .vEspace{
+        height: 9vw;
+    }
+
+    /*DIVS*/
+    .div-hero{
+        min-height: 70vh!important;
+        height: 70vh;
+        padding: 0px;
+    }
+
+    /*IMG'S*/
+    .img-drucker{
+        width: 75%;
+    }
+
+    .img-team{
+        width: 90%;
+    }
+
+    .img-uron{
+        width:70%;
+    }
+
+    .brand-title{
+        padding-top: 10vh;
+        width: 70%;
+    }
+
+    /*COLUMNA-FILA*/
+    .hero-col1{
+        padding: 0px;
+    }
+
+    .col-ficha{
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .div-footer{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .logo-foot{
+        width: 50%;
+    }
 }

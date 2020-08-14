@@ -1,7 +1,7 @@
 function hola() {
     Swal.fire({
         title: '¡Oh, me has descubierto!',
-        text: 'Soy un uron, la mascota de la empresa.',
+        text: 'Soy un hurón, la mascota de la empresa.',
         imageUrl: 'src/imgs/uron.png',
         imageHeight: 200,
         confirmButtonColor: "#333333",
